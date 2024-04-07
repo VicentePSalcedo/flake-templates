@@ -19,6 +19,9 @@
       ];
 
       shellHook = ''
+        virtualenv ./venv
+        source ./venv/bin/activate
+        which python3
       '';
     };
     defaultTemplate.path = ./.;
